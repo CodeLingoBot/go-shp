@@ -571,7 +571,7 @@ type Field struct {
 	Padding   [14]byte
 }
 
-// Returns a string representation of the Field. Currently
+// String returns a string representation of the Field. Currently
 // this only returns field name.
 func (f Field) String() string {
 	return strings.TrimRight(string(f.Name[:]), "\x00")
